@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noiré Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <button class="menu-toggle" aria-label="Open Menu">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="menu-text">Menu</span>
+                </button>
+                <div class="lang-selector">
+                    <span class="active">EN</span> / <span>ID</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="login-link">Login</a>
+                <a href="#contact" class="cta-button">Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- NAVIGATION OVERLAY -->
+    <div id="nav-overlay" class="nav-overlay">
+        <div class="overlay-content">
+            <nav class="overlay-nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="overlay-actions">
+                <a href="#" class="login-link">Login</a>
+                <div class="lang-selector">
+                    <span class="active">EN</span> / <span>ID</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO HOMEPAGE -->
+        <section id="hero" class="observe-me">
+            <div class="hero-content">
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=2071&auto=format&fit=crop" alt="A flat lay of cake and coffee on a table">
+                </div>
+                <div class="hero-text">
+                    <h1>Noiré <span class="tagline">a symphony of taste</span></h1>
+                    <p class="sub-headline">Welcome to Noiré Savor the essence of a modern twist on classic elegance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section id="about" class="observe-me">
+            <div class="about-intro">
+                <div class="decorative-tag">The Art of Dining Perfected</div>
+                <p>Step into Noiré, where culinary artistry meets timeless elegance. Nestled in the heart of refined indulgence, Noiré invites you to experience a symphony of flavor.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-circle">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <span>Cuisine Variant</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-circle photo-circle">
+                         <img src="https://images.unsplash.com/photo-1622597444262-299d08c6b989?q=80&w=1887&auto=format&fit=crop" alt="Two elegant cocktails">
+                    </div>
+                    <span>Cocktail Drinks</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-circle">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <span>Season Based</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section id="menu" class="observe-me">
+            <div class="menu-header">
+                <h2>MENU / <span class="essence-font">essence</span></h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="All">All</button>
+                    <button class="filter-btn" data-filter="Cuisine">Cuisine</button>
+                    <button class="filter-btn" data-filter="Entrées">Entrées</button>
+                    <button class="filter-btn" data-filter="Mains">Mains</button>
+                    <button class="filter-btn" data-filter="Desserts">Desserts</button>
+                    <button class="filter-btn" data-filter="Drinks">Drinks</button>
+                </div>
+                <span class="product-count">(0 Products)</span>
+            </div>
+            <div class="menu-gallery">
+                <!-- Menu items will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- CONTACT US -->
+        <section id="contact" class="observe-me">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>RESERVE / <span class="essence-font">moment</span></h2>
+                    <p>Experience timeless elegance, culinary artistry, and impeccable service. Book your table to create your Noiré moment.</p>
+                    <div class="rating">
+                        <span class="score">4.8/5</span>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="label">CUSTOMER SATISFACTION</span>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number*</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date*</label>
+                            <input type="text" id="date" name="date" placeholder="DD / MM / YYYY" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                        </div>
+                        <div class="form-group">
+                             <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" rows="3" placeholder="e.g. anniversary, dietary restrictions"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-bg-text">NOIRÉ</div>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Noiré Restaurant</h3>
+                <p>Where culinary artistry meets timeless elegance</p>
+                <button id="back-to-top">
+                    Back to Top <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+            <div class="footer-links">
+                <div class="footer-logo-circle"></div>
+                <nav>
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+1234567890">+1 234 567 890</a>
+                    <a href="mailto:reserve@noire.com">reserve@noire.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                 <p class="address">123 Elegance Avenue, Suite 100, Metropolis, 54321</p>
+                <p class="legal">Privacy Policy • All Rights Reserved © Noiré 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
